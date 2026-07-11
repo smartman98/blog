@@ -3,9 +3,6 @@ description: 규칙 기반·역발상 투자 정보 서비스를 만들어가는
 theme: minima
 lang: ko_KR
 
-author:
-  name: smartman98
-
 show_excerpts: true
 
 header_pages:
