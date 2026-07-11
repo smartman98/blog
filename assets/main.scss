@@ -1,0 +1,44 @@
+---
+---
+
+@import "minima";
+
+.site-header .wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.site-header .site-title {
+  float: none;
+  display: inline-block;
+}
+
+.site-header .site-nav {
+  position: absolute;
+  top: 0;
+  right: $spacing-unit;
+  float: none;
+}
+
+.site-footer {
+  text-align: center;
+}
+
+.footer-centered {
+  text-align: center;
+}
+
+.footer-heading {
+  text-align: center;
+}
+
+.footer-description {
+  color: $brand-color;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: $on-palm) {
+  .footer-description {
+    white-space: normal;
+  }
+}
