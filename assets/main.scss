@@ -27,6 +27,10 @@ $card-border: #ececec;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  &::after {
+    display: none;
+  }
 }
 
 @media screen and (max-width: $on-palm) {
