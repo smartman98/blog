@@ -3,6 +3,9 @@ layout: post
 title: "온보딩 모듈 최종 과제 — 내 도메인 업무를 네 조각으로"
 date: 2026-07-12
 categories: [에이전트과정, 온보딩]
+tags: [온보딩, 컴퓨팅사고법, FG지수, TQQQ, 커버드콜]
+thumbnail: /assets/thumbnails/domain-decomposition.svg
+excerpt: "20년간 손으로 반복해 온 매매 신호 판단을 AI 에이전트에게 넘기는 첫걸음. 매일 아침의 판단을 분해·패턴 인식·추상화·알고리즘, 네 가지 컴퓨팅 사고 동작으로 쪼개 본 기록."
 ---
 
 **도메인:** 규칙 기반·역발상 투자 정보 서비스

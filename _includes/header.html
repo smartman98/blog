@@ -1,0 +1,22 @@
+<header class="site-header" role="banner">
+  <div class="wrapper header-flex">
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+
+    <div class="header-icons">
+      <a class="icon-btn" href="{{ "/search/" | relative_url }}" aria-label="검색">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </a>
+      <a class="icon-btn avatar-btn" href="{{ "/about/" | relative_url }}" aria-label="소개">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <nav class="site-nav">
+    <div class="wrapper">
+      <a class="nav-link{% if page.url == "/" %} active{% endif %}" href="{{ "/" | relative_url }}">홈</a>
+      <a class="nav-link{% if page.url == "/tags/" %} active{% endif %}" href="{{ "/tags/" | relative_url }}">태그</a>
+      <a class="nav-link{% if page.url == "/guestbook/" %} active{% endif %}" href="{{ "/guestbook/" | relative_url }}">방명록</a>
+    </div>
+  </nav>
+</header>

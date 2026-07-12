@@ -1,0 +1,27 @@
+---
+layout: page
+title: 태그
+permalink: /tags/
+---
+
+{%- assign tag_names = site.tags | sort -%}
+
+<div class="tag-cloud">
+  {%- for tag in tag_names -%}
+  <a class="tag-pill" href="#tag-{{ tag[0] | slugify }}">{{ tag[0] }} <span class="tag-count">{{ tag[1].size }}</span></a>
+  {%- endfor -%}
+</div>
+
+{%- for tag in tag_names -%}
+<section id="tag-{{ tag[0] | slugify }}" class="tag-section">
+  <h2 class="tag-heading">#{{ tag[0] }}</h2>
+  <ul class="tag-post-list">
+    {%- for post in tag[1] -%}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span class="tag-post-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+{%- endfor -%}
