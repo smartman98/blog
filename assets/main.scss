@@ -16,10 +16,24 @@ $card-border: #ececec;
   padding-top: 18px;
 }
 
+.site-header .wrapper.header-flex {
+  max-width: 100%;
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .header-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media screen and (max-width: $on-palm) {
+  .site-header .wrapper.header-flex {
+    padding-left: $spacing-unit / 2;
+    padding-right: $spacing-unit / 2;
+  }
 }
 
 .site-header .site-title {
